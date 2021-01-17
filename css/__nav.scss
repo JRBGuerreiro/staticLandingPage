@@ -18,6 +18,13 @@ nav{
         li:hover{
             background-color: #fecc1f;
         }
+
+        & li:last-of-type {
+            background-color: #fecc1f;
+        }
+        & li:last-of-type:hover {
+            background-color: transparent;
+        }
     }
 }
 

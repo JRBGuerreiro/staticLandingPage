@@ -25,6 +25,14 @@ nav ul li:hover {
   background-color: #fecc1f;
 }
 
+nav ul li:last-of-type {
+  background-color: #fecc1f;
+}
+
+nav ul li:last-of-type:hover {
+  background-color: transparent;
+}
+
 header {
   height: 70px;
   display: -webkit-box;
@@ -127,6 +135,159 @@ main {
 .main-content-wrapper button:hover::after {
   background-color: #fcfcfc;
   width: 100%;
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.2;
+  display: none;
+}
+
+.modal-inner {
+  height: 500px;
+  background-color: #fecc1f;
+  width: 300px;
+  position: fixed;
+  top: -100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: calc(50% - 150px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-inner form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.modal-inner form label {
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: 3px;
+}
+
+.modal-inner form input {
+  width: 80%;
+  padding: 13px;
+  border-style: none;
+}
+
+.modal-inner label:last-of-type {
+  margin-top: 10px;
+}
+
+.modal-inner p {
+  margin: 10px 0 12px 0;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 9pt;
+}
+
+.signup-logo {
+  width: 100px;
+  height: 100px;
+  margin: 30px 0 20px 0;
+}
+
+.signup-close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.signup-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.signup-wrapper .signup-google, .signup-wrapper .signup-github {
+  padding: 10px 0 10px 0;
+  border-radius: 100px;
+  width: 80%;
+  background-color: #fcfcfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 8px 6px -6px #555555;
+          box-shadow: 0 8px 6px -6px #555555;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.signup-wrapper .signup-google img, .signup-wrapper .signup-github img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.signup-wrapper .signup-google:hover, .signup-wrapper .signup-github:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #555555;
+}
+
+.signup-wrapper .signup-github {
+  margin-top: 15px;
+}
+
+.signup-wrapper .text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100% - 10px);
+}
+
+.signup-wrapper .text-wrapper p {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 11pt;
+  margin: 0;
 }
 
 * {
