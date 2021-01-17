@@ -1,0 +1,26 @@
+@import "__nav";
+@import "__main";
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+      background-image: url('../images/sintra.jpg');
+      background-repeat: no-repeat;
+  }
+
+  body{
+      height: 100vh;
+  }
+
+  .body-wrapper{
+    background-color: #a93b0e;
+    height: 100vh;
+    opacity: 0.35;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+  }

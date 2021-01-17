@@ -1,0 +1,29 @@
+nav{
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 60px;
+        li{
+            margin: 0 10px 0 10px;
+            text-decoration: none;
+            list-style: none;
+            padding: 10px 30px 10px 30px;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+            color: #fcfcfc;
+            cursor: pointer;
+        }
+
+        li:hover{
+            background-color: #fecc1f;
+        }
+    }
+}
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

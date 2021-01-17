@@ -1,0 +1,77 @@
+main{
+    height: calc(100% - 70px);
+    display: flex;
+}
+
+.main-content-wrapper{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 100px;
+
+    h1, h2, p{
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #fcfcfc;
+    }
+    h1,h2{
+        margin-bottom: 15px;
+        font-size: 28pt;
+    }
+    h1{
+        font-size: 38pt;
+    }
+    p{
+        line-height: 18pt;
+    }
+
+    button{
+        padding: 10px 30px 10px 30px;
+        margin-top: 15px;
+        background-color: #fecc1f;
+        border: none;
+        border-radius: 100px;
+        color: #3e3e3e;
+        font-family: 'Roboto', sans-serif;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+
+        span{
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        &:hover{
+            span{
+                background: url('../images/arrow.svg') center center no-repeat;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: calc(50% - 10px);
+                top: calc(50% - 10px);
+                z-index: 10;
+                opacity: 1;
+            }
+        }
+    }
+
+
+    button::after{
+        content: '';
+        transition: all 0.3s ease;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 100px;
+    }
+
+    button:hover::after{
+        background-color: #fcfcfc;
+        width: 100%;
+    }
+
+}
