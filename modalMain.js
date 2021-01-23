@@ -13,17 +13,20 @@ var closeBtn = document.getElementById("modal-close");
 //Is modal open?
 var isOpen = false
 
-closeBtn.addEventListener('click', () => {
+const closeModal = () => {
     modalInner.style.top = '-100vh';
-    modal.style.display = 'none'
-    isOpen=false
+        modal.style.display = 'none'
+        isOpen = false;
+}
+
+
+closeBtn.addEventListener('click', () => {
+    closeModal()
 })
 
 window.addEventListener('click', (e) => {
     if(isOpen && e.target == modal) {
-        modalInner.style.top = '-100vh';
-        modal.style.display = 'none'
-        isOpen = false;
+        closeModal()
     }
 })
 
